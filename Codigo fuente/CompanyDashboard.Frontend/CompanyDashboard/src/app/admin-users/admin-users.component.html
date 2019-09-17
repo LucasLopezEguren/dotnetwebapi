@@ -1,0 +1,12 @@
+<div>
+  <div class="panel adminBodySection">
+    <mat-card class="adminSectionCard list">
+      <app-admin-users-list (userSelected)="setUser($event)"></app-admin-users-list>
+    </mat-card>
+  </div>
+  <div class="panel adminBodySection">
+    <mat-card class="adminSectionCard">
+      <app-admin-users-form [user]=user></app-admin-users-form>
+    </mat-card>
+  </div>
+</div>

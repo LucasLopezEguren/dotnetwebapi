@@ -1,0 +1,28 @@
+nav {
+    float: left;
+    height: 80vh;
+    width: 250px;
+    overflow-y: scroll;
+}
+a {
+  color: black;
+}
+.navBarItem {
+    width: 140px;
+    text-align: left;
+    background: white;
+  }
+  
+  .listItem {
+    padding: 20px 10px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+  }

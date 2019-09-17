@@ -1,0 +1,13 @@
+.bodySection {
+    padding: 20px;
+    height: 80vh;
+    max-height: 80%;
+    overflow-y: scroll;
+}
+.fullwidth{
+    width: 100%
+}
+.right{
+    float: right;
+    text-align: right;
+}

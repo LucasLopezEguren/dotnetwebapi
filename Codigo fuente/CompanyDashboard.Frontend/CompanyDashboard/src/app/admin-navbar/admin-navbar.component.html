@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light panel-primary ">
+  <div>
+    <ul class="nav sidebar-nav">
+      <li class="nav-item active">
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              Areas
+            </mat-expansion-panel-header>
+            <a [routerLink]="['./areas']">
+              <button mat-button>
+                <div class="navBarItem">Administrar areas</div>
+              </button>
+            </a>
+            <a [routerLink]="['./areausers']">
+              <button mat-button>
+                <div class="navBarItem">Administrar usuarios</div>
+              </button>
+            </a>
+            <a [routerLink]="['./areaindicators']">
+              <button mat-button>
+                <div class="navBarItem">Administrar indicadores</div>
+              </button>
+            </a>
+          </mat-expansion-panel>
+          <mat-card>
+            <a [routerLink]="['./users']">
+              <button mat-button>
+                <section class="navBarItem">Usuarios
+                </section>
+              </button>
+            </a>
+          </mat-card>
+          <mat-card>
+            <a [routerLink]="['./reports']">
+              <button mat-button>
+                <section class="navBarItem">Reportes
+                </section>
+              </button>
+            </a>
+          </mat-card>
+          <mat-card>
+            <a [routerLink]="['./imports']">
+              <button mat-button>
+                <section class="navBarItem">Importar indicadores
+                </section>
+              </button>
+            </a>
+          </mat-card>
+        </mat-accordion>
+      </li>
+    </ul>
+  </div>
+</nav>

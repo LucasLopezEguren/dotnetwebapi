@@ -1,0 +1,10 @@
+<div class='panel panel-primary'>
+  <app-header [user]=user></app-header>
+  <app-admin-navbar></app-admin-navbar>
+  <section class='bodySection'>
+      <div class="right fullwidth">
+            <button mat-raised-button (click)="logout()" color="primary" class="right">Logout</button>
+        </div>
+      <router-outlet></router-outlet>
+  </section>
+</div>

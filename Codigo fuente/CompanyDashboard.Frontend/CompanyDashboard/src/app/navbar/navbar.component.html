@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light panel-primary ">
+  <div>
+    <ul class="nav sidebar-nav">
+      <li class="nav-item active">
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              Mostrar/Ocultar
+            </mat-expansion-panel-header>
+            <div *ngFor='let indicator of user.listIndicator'>
+              <app-indicator-visibility (changed)="reCount($event)" [indicator]=indicator></app-indicator-visibility>
+            </div>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Ordenar indicadores
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <section class="list">
+              <div cdkDropList (cdkDropListDropped)="drop($event)">
+                <div *ngFor="let indicator of user.listIndicator">
+                  <div class="listItem" *ngIf=indicator.visible cdkDrag>{{indicator.name}}</div>
+                </div>
+              </div>
+            </section>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </li>
+    </ul>
+  </div>
+</nav>

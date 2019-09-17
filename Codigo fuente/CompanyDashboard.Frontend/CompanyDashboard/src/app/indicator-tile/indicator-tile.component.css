@@ -1,0 +1,15 @@
+.indicator-light {
+    height: 50px;
+    width: 50px;
+}
+.editButton{
+    height: 25px;
+    width: 25px;
+    padding: 0;
+    border-radius: 50%;
+}
+.indicator {
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}

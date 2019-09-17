@@ -1,0 +1,35 @@
+.btn-group button {
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 100%; 
+    box-sizing: border-box;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .sectionListItem {      
+    width: 100%; 
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none;
+  }
+  
+  .btn-group button:hover {
+    background-color: #0004ff6b;
+  }
+
+  .active {
+    background-color: #000280;
+    color: white;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+  }

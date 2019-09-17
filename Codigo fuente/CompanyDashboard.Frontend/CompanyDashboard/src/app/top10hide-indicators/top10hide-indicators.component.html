@@ -1,0 +1,8 @@
+<mat-card-header>
+    <mat-card-title>Los indicadores mas escondidos</mat-card-title>
+</mat-card-header>
+<div class="btn-group sectionListItem" (click)="onButtonGroupClick($event)">
+  <section class="sectionListItem" *ngFor='let log of logs'>
+      <button matButton class="btn" name="{{log.indicador}}">indicador {{log.indicador}} escondido {{log.escondido}} veces</button>
+  </section>
+</div>

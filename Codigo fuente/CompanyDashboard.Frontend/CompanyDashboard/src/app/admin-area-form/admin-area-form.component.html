@@ -1,0 +1,29 @@
+<mat-card-header>
+  <mat-card-title>Area</mat-card-title>
+</mat-card-header>
+<mat-card-content class="field">
+  <form>
+      <table cellspacing="0" class="field">
+          <tr class="field">
+              <td class="field">
+                  <mat-form-field class="field">
+                      <input class="field" matInput placeholder="Nombre" [(ngModel)]="name" name="name" required>
+                  </mat-form-field>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <mat-form-field  class="field">
+                      <input matInput placeholder="Fuente de datos" [(ngModel)]="datasource" name="datasource" required>
+                  </mat-form-field>
+              </td>
+          </tr>
+      </table>
+  </form>
+</mat-card-content>
+<footer>
+  <mat-card-actions>
+      <button mat-raised-button (click)="register()" color="primary">Registrar</button>
+      <button mat-raised-button (click)="modify()" color="primary">Modificar</button>
+  </mat-card-actions>
+</footer>

@@ -1,0 +1,39 @@
+<div>
+  <app-navbar (changed)="reCount()" [user]=user></app-navbar>
+  <section class='bodySection'>
+    <div class="right">
+      <button mat-raised-button (click)="logout()" color="primary" class="right">Logout</button>
+    </div>
+    <div class='summary'>
+      <table class='summaryTable'>
+        <tr>
+          <td colspan="2">
+            <span class='summary'>Resumen del estado del perfíl: </span>
+          </td>
+          <td>
+            <span class='summary glyphicon glyphicon-eye-open'> {{visibleCount}} / {{indicators.length}} </span>
+          </td>
+        </tr>
+      </table>
+      <table class='summaryTable'>
+        <tr>
+          <td>
+            <span class='summary green circle'> {{greenCount}} </span>
+          </td>
+          <td>
+            <span class='summary yellow circle'> {{yellowCount}} </span>
+          </td>
+          <td>
+            <span class='summary red circle'> {{redCount}} </span>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <span *ngFor='let indicator of indicators'>
+        <app-indicator-tile *ngIf=indicator.visible [indicator]="indicator"></app-indicator-tile>
+      </span>
+    </div>
+  </section>
+</div>

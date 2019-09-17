@@ -1,0 +1,8 @@
+.father {
+    height: 100vh;
+}
+.holder{
+    height: 100vh;
+    margin: 0;
+    vertical-align: middle;
+}

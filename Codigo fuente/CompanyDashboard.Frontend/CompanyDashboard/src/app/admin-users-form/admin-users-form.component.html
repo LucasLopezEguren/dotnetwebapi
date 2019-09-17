@@ -1,0 +1,54 @@
+<mat-card-header>
+    <mat-card-title>Usuario</mat-card-title>
+</mat-card-header>
+<mat-card-content class="field">
+    <form>
+        <table cellspacing="0" class="field">
+            <tr class="field">
+                <td class="field">
+                    <mat-form-field class="field">
+                        <input class="field" matInput placeholder="Nombre" [(ngModel)]="name" name="name" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field  class="field">
+                        <input matInput placeholder="Apellido" [(ngModel)]="lastname" name="lastname" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field  class="field">
+                        <input matInput placeholder="E-mail" [(ngModel)]="mail" name="mail" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field  class="field">
+                        <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field  class="field">
+                        <input matInput placeholder="Password" [(ngModel)]="password"
+                            [type]="hide ? 'text' : 'password'" name="password" required>
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-pressed]="hide">
+                            <span class="summary glyphicon glyphicon-eye-{{hide ? 'open' : 'close'}}"></span>
+                        </button>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+    </form>
+</mat-card-content>
+<footer>
+    <mat-card-actions>
+        <button mat-raised-button (click)="register()" color="primary">Registrar</button>
+        <button mat-raised-button (click)="modify()" color="primary">Modificar</button>
+    </mat-card-actions>
+</footer>

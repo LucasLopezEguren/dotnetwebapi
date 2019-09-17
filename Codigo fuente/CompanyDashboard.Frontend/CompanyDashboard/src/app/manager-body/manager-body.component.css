@@ -1,0 +1,41 @@
+.bodySection {
+    padding: 20px;
+    height: 80vh;
+    max-height: 80%;
+    overflow-y: scroll;
+}
+.right{
+    float: right;
+    text-align: right;
+}
+.red {
+    background-image: url("../../assets/Images/Red.png");  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ 
+}
+.yellow {
+    background-image: url("../../assets/Images/Yellow.png");  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.green {
+    background-image: url("../../assets/Images/Green.png");  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.summary {
+    height: 30px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.circle{
+    border-radius: 50%;
+    width: 30px;
+    line-height: 30px;     
+}
+.summaryTable {
+    border-collapse: unset;
+    border-spacing: 1px;
+}

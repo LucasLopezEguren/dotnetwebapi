@@ -1,0 +1,10 @@
+<div class="btn-group sectionListItem" (click)="onButtonGroupClick($event)">
+    <section class="sectionListItem" *ngFor='let aUser of users'>
+        <button matButton class="btn" name="{{aUser.username}}">{{aUser.username}}</button>
+    </section>
+</div>
+<footer>
+    <mat-card-actions>
+        <button mat-raised-button (click)="delete()" color="primary">Borrar</button>
+    </mat-card-actions>
+</footer>

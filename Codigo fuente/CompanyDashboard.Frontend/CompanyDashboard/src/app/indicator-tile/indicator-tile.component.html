@@ -1,0 +1,15 @@
+<div class="panel indicator">
+    <mat-card>
+        <div>
+            <button mat-icon-button class="editButton" (click)="setEditable()"><span
+                    class="glyphicon glyphicon-pencil" (click)="editName()"></span></button>
+            <mat-form-field>
+                <input #name type="text" matInput value="{{indicator.name}}" readonly="{{editable}}"
+                    (blur)="saveChanges($event)" />
+            </mat-form-field>
+        </div>
+        <img matTooltip="{{indicator.greenText}}" src="{{green}}" alt="green" class="indicator-light" />
+        <img matTooltip="{{indicator.yellowText}}" src="{{yellow}}" alt="yellow" class="indicator-light" />
+        <img matTooltip="{{indicator.redText}}" src="{{red}}" alt="red" class="indicator-light" />
+    </mat-card>
+</div>
